@@ -3,6 +3,7 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 main
@@ -15,10 +16,20 @@ main
 .newsBox
 {
     width: 600px;
-    background-color: aqua;
-    border: 2px solid gray;
+    background-color: #bce4ea;
+    border-bottom: 2px solid black;
+    padding: 10px;
 }
 
+.newsBox:hover
+{
+    background-color: #ff5555;
+}
+
+.newsBox > div
+{
+    margin-bottom: 10px;
+}
 .buttonWrapper
 {
     display: flex;
@@ -27,6 +38,36 @@ main
 }
 button
 {
-    background-color: green;
+    background-color: #109d49;
     color:white;
+    padding: 10px;
+    border:0px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.pop-up
+{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 540px;
+    height: fit-content;
+    background-color: #e1ff73;
+    text-align: center;
+    padding: 20px;
+}
+.pop-up > div
+{
+    text-align: left;
+}
+
+.pop-up-wrapper
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
